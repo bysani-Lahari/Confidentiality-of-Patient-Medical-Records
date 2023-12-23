@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Medi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='img/favicon.png')}}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static' ,filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+<!--     <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="/">home</a></li>
+                                                <li><a href="{{url_for('doctorlog')}}">Login</a></li>
+                                                
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="book_apointment_area">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="popup_box ">
+                        <div class="popup_inner">
+                            <h3><b>Doctor Registration</b></h3>
+                            <center>{{ msg }}</center>
+                            <form action="{{url_for('doctorreg')}}" method="post">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <select class="form-select wide" class="" name="Department" required>
+                                            <option data-display="Please select Department to visit">Please select Department to visit </option>
+                                            <option value="Pulmonary">Pulmonary</option>
+                                            <option value="Cardiology">Cardiology</option>
+                                            <option value="Neurology">Neurology</option>
+                                            <option value="Traumatology">Traumatology</option>
+                                            <option value="Dental">Dental</option>
+                                            <option value="Nuclear">Nuclear</option>
+                                            <option value="magnetic">magnetic</option>
+                                            <option value="Pregnancy">Pregnancy</option>
+                                            <option value="For disabled">For disabled</option>
+                                            <option value="X-ray">X-ray</option>
+                                            <option value="Prostheses">Prostheses</option>
+                                            <option value="Orthopedic">Orthopedic</option>
+                                            <option value="Dermatologist">Dermatologist</option>
+                                            <option value="Medical Specialist">Medical Specialist</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="text"  placeholder="Your name " name="Name">
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <input type="text"  placeholder="Your age" name="Age">
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <input type="text"  placeholder="Phone number " name="Number">
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="email"  placeholder="Email Address" name="email">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="password"  placeholder="Password" name="password">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="password"  placeholder="ConPassword" name="conpassword">
+                                    </div>
+
+                                    <div class="col-xl-12">
+                                        <button type="submit" class="boxed-btn3">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quality_area_start  -->
+
+    <!-- quality_areaend  -->
+
+    <!-- Emergency_contact start -->
+
+    <!-- Emergency_contact end -->
+    <!-- link that opens popup -->
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <h3>
+                    Book an
+                <span>Appointment</span>
+                </h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Please select doctor to visit">Please select doctor to visit </option>
+                                <option value="1">Anaf</option>
+                                <option value="2">Nayna Therapy</option>
+                                <option value="3">Nadif</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-9">
+                            <input type="text"  placeholder="Your name ">
+                        </div>
+                        <div class="col-xl-3">
+                            <input type="text"  placeholder="Your age">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Phone number ">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="email"  placeholder="Email Address">
+                        </div>
+                        <div class="col-xl-6">
+                            <input class="datepicker" placeholder="Appointment Date">
+                        </div>
+                        <div class="col-xl-6">
+                            <input class="timepicker" placeholder="Suitable time">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed-btn3">Make an Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- JS here -->
+    <script src="{{url_for('static',filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/ajax-form.js')}}"></script>
+    <script src="{{url_for('static',filename='js/waypoints.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.counterup.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/scrollIt.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/nice-select.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
+    <script src="{{url_for('static',filename='js/gijgo.min.js')}}"></script>
+    <!--contact js-->
+    <script src="{{url_for('static',filename='js/contact.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.form.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.validate.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/mail-script.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+</body>
+
+</html>

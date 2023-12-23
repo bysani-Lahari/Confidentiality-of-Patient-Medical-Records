@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Medi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='img/favicon.png')}}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static' ,filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+<!--     <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="{{url_for('static',filename='img/logo.png')}}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+
+                                                <li><a href="{{url_for('allrequests')}}">View Request</a></li>
+                                                <li><a href="/">Logout</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- welcome_clicnic_area_start -->
+     <div class="depertment_area" style="padding-top:150px; padding-bottom: 50px;">
+        <div class="container">
+            <div class="row custom_align align-items-end justify-content-between">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <h3>Authority</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+    <!-- JS here -->
+    <script src="{{url_for('static',filename='js/vendor/modernizr-3.5.0.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/ajax-form.js')}}"></script>
+    <script src="{{url_for('static',filename='js/waypoints.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.counterup.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/scrollIt.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.scrollUp.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/nice-select.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.slicknav.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/plugins.js')}}"></script>
+    <script src="{{url_for('static',filename='js/gijgo.min.js')}}"></script>
+    <!--contact js-->
+    <script src="{{url_for('static',filename='js/contact.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.form.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.validate.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/mail-script.js')}}"></script>
+
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+</body>
+
+</html>
